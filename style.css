@@ -1,0 +1,594 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    /* background-color: #333; */
+    padding: 10px;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    /* width: 400px; */
+}
+
+nav{
+    display: flex;
+    gap: 5%;
+}
+
+h2{
+    padding: 9px;
+    font-size: 29px;
+}
+
+nav ul{
+    list-style: none;
+    margin-top: 1%;
+}
+
+nav ul li{
+    display: inline;
+    padding: 20px;
+}
+
+.drop-down{
+    position: fixed;
+    top: 0px;
+    left: 5%;
+    display: none;
+    flex-direction: column;
+    margin-top: 3%;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 30%;
+    width: 13%;
+    text-align: center;
+}
+
+.drop-down li{
+    padding: 11px;
+    margin-top: 1%;
+}
+
+.drop-down-2{
+    position: fixed;
+    top: 0px;
+    left: 20%;
+    display: none;
+    flex-direction: column;
+    margin-top: 3%;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 25%;
+    width: 10%;
+    text-align: center;
+}
+
+.drop-down-2 li{
+    padding: 16px;
+}
+
+a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Epilogue";
+}
+
+span{
+    padding: 10px;
+}
+
+nav ul li:hover>.drop-down{
+    display: flex;
+}
+
+.drop:hover>.drop-down-2{
+    display: flex;
+}
+
+.logins{
+    float: right;
+    padding-left: 20%;
+    /* padding-right: 10%; */
+    padding-top: 7px;
+    justify-content: space-around;
+    /* width: 50%; */
+}
+
+.shit{
+    width: 50px;
+    list-style: none;
+    padding-top: 20px;
+    display: none;
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+img{
+    width: 600px;
+    height: 600px;
+    margin-right: 3%;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+}
+
+.hero-text{
+    padding: 12%;
+}
+
+.hero-text h1{
+    font-size: 70px;
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+
+.hero-text p{
+    font-size: 20px;
+    width: 80%;
+    color: #c2c2c2;
+}
+
+.btc{
+    margin-top: 7%;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.45s;
+}
+
+.show{
+    display: flex;
+}
+
+.hidden{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    background: #fff;
+    list-style: none;
+}
+
+.hidden li{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.hide{
+    position: fixed;
+    top: -5px;
+    right: 0;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.hidden .btn {
+    width: 150px;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.hidden .link{
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.desktop{
+    display: none;
+}
+
+.btc:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+@media (max-width: 414px) {  /* First one */
+    .moblei{
+        display: none;
+    }
+
+    .show{
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .hero-section{
+        display: block;
+    }
+
+    .moblie{
+        display: block;
+        width: 400px;
+    }
+
+
+    nav{
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        justify-content: space-between;
+    }
+
+    h2{
+        text-transform: uppercase;
+    }
+    .hidden{
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        height: 100%;
+        background: #fff;
+        list-style: none;
+    }
+
+    .shit{
+        display: block;
+        padding: 20px;
+        margin-right: 20px;
+        /* font-size: 2rem; */
+    }
+}
+
+@media (max-width: 414px) {
+    .moblei{
+        display: none;
+    }
+
+    .show{
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .hero-section{
+        display: block;
+    }
+
+    .moblie{
+        display: block;
+        width: 400px;
+    }
+
+
+    nav{
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        justify-content: space-between;
+    }
+
+    h2{
+        text-transform: uppercase;
+    }
+    .hidden{
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        height: 100%;
+        background: #fff;
+        list-style: none;
+    }
+
+    .shit{
+        display: block;
+        padding: 20px;
+        margin-right: 20px;
+        /* font-size: 2rem; */
+    }
+}
+
+@media (max-width: 320px) {
+    .moblei{
+        display: none;
+    }
+
+    .show{
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .hero-section{
+        display: block;
+    }
+
+    .moblie{
+        display: block;
+        width: 400px;
+    }
+
+
+    nav{
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        justify-content: space-between;
+        /* padding-right: 20px; */
+        overflow: hidden;
+    }
+
+    h2{
+        text-transform: uppercase;
+    }
+    .hidden{
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        height: 100%;
+        background: #fff;
+        list-style: none;
+    }
+
+    .shit{
+        display: block;
+        padding: 20px;
+        margin-right: 20px;
+        /* font-size: 2rem; */
+    }
+}
+
+@media (max-width: 414px) {
+    .moblei{
+        display: none;
+    }
+
+    .show{
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .hero-section{
+        display: block;
+    }
+
+    .moblie{
+        display: block;
+        width: 400px;
+    }
+
+
+    nav{
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        justify-content: space-between;
+    }
+
+    h2{
+        text-transform: uppercase;
+    }
+    .hidden{
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        height: 100%;
+        background: #fff;
+        list-style: none;
+    }
+
+    .shit{
+        display: block;
+        padding: 20px;
+        margin-right: 20px;
+        /* font-size: 2rem; */
+    }
+}
+
+@media (max-width: 768px) {
+    .moblei{
+        display: none;
+    }
+
+    .show{
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .hero-section{
+        display: flex;
+    }
+
+    .moblie{
+        display: block;
+        width: 400px;
+    }
+
+
+    nav{
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        justify-content: space-between;
+    }
+
+    h2{
+        text-transform: uppercase;
+    }
+    .hidden{
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        height: 100%;
+        background: #fff;
+        list-style: none;
+    }
+
+    .shit{
+        display: block;
+        padding: 20px;
+        margin-right: 20px;
+        /* font-size: 2rem; */
+    }
+}
+
+@media (max-width: 414px) {
+    .moblei{
+        display: none;
+    }
+
+    .show{
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .hero-section{
+        display: block;
+    }
+
+    .moblie{
+        display: block;
+        width: 390px;
+    }
+
+
+    nav{
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        justify-content: space-between;
+    }
+
+    header{
+        width: 400px;
+    }
+
+    h2{
+        text-transform: uppercase;
+    }
+    .hidden{
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        height: 100%;
+        background: #fff;
+        list-style: none;
+    }
+
+    .shit{
+        display: block;
+        padding: 20px;
+        margin-right: 20px;
+        /* font-size: 2rem; */
+    }
+}
+
+@media (max-width: 425px) {
+    .moblei{
+        display: none;
+    }
+
+    .show{
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .hero-section{
+        display: block;
+    }
+
+    .moblie{
+        display: block;
+        width: 400px;
+    }
+
+
+    nav{
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        justify-content: space-between;
+    }
+
+    h2{
+        text-transform: uppercase;
+    }
+    .hidden{
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        height: 100%;
+        background: #fff;
+        list-style: none;
+    }
+
+    .shit{
+        display: block;
+        padding: 20px;
+        margin-right: 20px;
+        /* font-size: 2rem; */
+    }
+}
